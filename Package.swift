@@ -28,7 +28,7 @@ import PackageDescription
 let package = Package(
     name: "AlamofireImage",
     platforms: [
-        .iOS(.v8),
+        .iOS(.v9),
         .macOS(.v10_10),
         .tvOS(.v9),
         .watchOS(.v2)
@@ -37,7 +37,7 @@ let package = Package(
         .library(name: "AlamofireImage", targets: ["AlamofireImage"])
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: Version(4, 8, 2)))
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "4.9.1"))
     ],
     targets: [
         .target(
